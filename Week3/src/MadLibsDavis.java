@@ -10,6 +10,8 @@ public class MadLibsDavis {
 		
 		System.out.println("Enter a name: ");
 		String aName = in.nextLine().toLowerCase();
+
+		String capFirstAName = aName.substring(0, 1).toUpperCase() + aName.substring(1);
 		
 		System.out.println("Enter an object: ");
 		String objectI = in.nextLine().toLowerCase();
@@ -26,9 +28,9 @@ public class MadLibsDavis {
 		System.out.println("Enter an adjective: ");
 		String anAdjective = in.nextLine().toLowerCase();
 		
-		System.out.println("Once upon a time there was a person named " + aName + ". " + aName + 
-				" had a giant " + objectI + ". This was problematic because it wouldn't fit in " + aName + "'s " + 
-				objectII + ". Though it turned out okay in the end because they got a " + anAdjective +" " + objectIII + " to " + pastTense + " with!" );
+		System.out.println("Once upon a time there was a person named " + capFirstAName + ". " + capFirstAName + " had giant " + objectI + ".\n"
+				+ "This was problematic because it wouldn't fit in " + capFirstAName + "'s " + 
+				objectII + ".\nThough it turned out okay in the end because they got a " + anAdjective +" " + objectIII + " to " + pastTense + " with!" );
 
 		
 		
