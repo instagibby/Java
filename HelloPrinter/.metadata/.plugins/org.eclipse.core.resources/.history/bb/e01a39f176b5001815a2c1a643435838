@@ -1,0 +1,31 @@
+
+public class DataTypeDemoDavis {
+	
+	public static void main(String[] args) {
+		
+		int numOfCars = 1;
+		System.out.println("I own "+ numOfCars + " car!");
+		
+		double carsPaidOff = 0.5;
+		System.out.println("I only have paid off " + carsPaidOff + " of my car!");
+		
+		float carPercentToPayOff = 10.010f;
+		System.out.println("I have " + carPercentToPayOff + "% left to pay off.");
+		
+		boolean isCarPaidOff = false;
+		System.out.println("It is " + isCarPaidOff + " that I have paid off my car yet.");
+		
+		short carLoanLeft = 400;
+		System.out.println("The total amount left I owe on my car is only $" + carLoanLeft + "!");
+		
+		long desiredBankAccount = 100000;
+		System.out.println("If I could have my car paid off maybe I would have $" + desiredBankAccount + " in my bank!");
+		
+		byte monthlyCarPayment = 114;
+		System.out.println("I only have to pay $" + monthlyCarPayment + " per month!");
+		
+		char a = 'A';
+		System.out.println("If I study hard I know I can get an " + a + "!");
+
+	}
+}

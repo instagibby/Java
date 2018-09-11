@@ -1,0 +1,16 @@
+
+public class DataTypeDemoDavis {
+	
+	public static void main(String[] args) {
+		
+		int numOfcars = 1;
+		double carsPaidOff = 0.5;
+		float carPercentToPayOff = 0.010f;
+		boolean isCarPaidOff = false;
+		short carLoanLeft = 400;
+		long desiredBankAccount = 100000L;
+		byte monthlyCarPayment = 
+		char
+		
+	}
+}

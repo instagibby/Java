@@ -1,0 +1,18 @@
+
+public class BookOrderDavis {
+	public static void main(String[] args) {
+		
+		int numOfBooksPurchased = 8;
+		double bookSubtotal = 125.37;
+		double tax = bookSubtotal * 0.065;
+		double shipping = numOfBooksPurchased * 2.95;
+		
+		double orderTotal = shipping + tax + bookSubtotal;
+		
+		double orderTotalRounded = Math.round(orderTotal * 100) / 100;
+		
+		
+		System.out.println("============ Bookstore Receipt ============");
+		System.out.println("Your order total is: $" + orderTotalRounded);
+	}
+}
