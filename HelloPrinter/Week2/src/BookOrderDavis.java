@@ -17,8 +17,10 @@ public class BookOrderDavis {
 		// Sets variables for calculations
 		int numOfBooksPurchased = Integer.parseInt(userInputBooks);
 		double bookSubtotal = Double.parseDouble(userInputOrderTotal);
-		double tax = bookSubtotal * 0.065;
-		double shipping = (int)numOfBooksPurchased * 2.95;
+		final double TAX_RATE = 0.065;
+		double tax = bookSubtotal * TAX_RATE;
+		final double SHIPPING_RATE = 2.95;
+		double shipping = (int)numOfBooksPurchased * SHIPPING_RATE;
 		
 		double orderTotal = shipping + tax + bookSubtotal;
 
@@ -28,7 +30,7 @@ public class BookOrderDavis {
 		System.out.println("============ Bookstore Receipt ============");
 		System.out.println("Number of books purchased: " + numOfBooksPurchased);
 		System.out.println("Book Subtotal: $" + bookSubtotal);
-		System.out.println("Tax: $" + tax);
+		System.out.printf("Tax: $%.2f \n", tax);
 		System.out.println("Shipping: $" + shipping);
 		System.out.println("\n" + "----------------------" +"\n");
 		System.out.println("Your order total is: $" + orderTotalRounded);
