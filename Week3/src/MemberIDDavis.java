@@ -7,6 +7,7 @@ public class MemberIDDavis {
 		
 		Scanner in = new Scanner(System.in);
 		
+		// Prompts for input asking for member ID
 		System.out.println("Enter your member ID: ");
 		String memberIDInput = in.nextLine().toUpperCase();
 		
@@ -19,7 +20,7 @@ public class MemberIDDavis {
 		String fifth = memberIDInput.substring(10,13);
 		String sixth = memberIDInput.substring(13,14);
 		
-		
+		// Places the parts of the member id in the spots as well as adds spacing/formatting as required
 		System.out.println(first + "-" + second + " " + third + " " + fourth + "-" + fifth + " (" + sixth + ")");
 		
 		in.close();
