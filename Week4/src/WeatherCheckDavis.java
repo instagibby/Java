@@ -33,20 +33,23 @@ public class WeatherCheckDavis {
 		System.out.println("What is the temperature?");
 		double tempPrompt = in.nextDouble();
 		weatherPrompt = weatherPrompt.toLowerCase();
+		
+		String responseToUser;
 
 		// Run to test the scenario
 		if (weatherPrompt.equals(spring) && tempPrompt > springTemp) {
-			System.out.println(springReply);
+			responseToUser = springReply;
 		} else if (weatherPrompt.equals(summer) && tempPrompt > summerTemp) {
-			System.out.println(summerReply);
+			responseToUser = summerReply;
 		} else if (weatherPrompt.equals(fall) && tempPrompt > fallTemp) {
-			System.out.println(fallReply);
+			responseToUser = fallReply;
 		} else if (weatherPrompt.equals(winter) && tempPrompt < winterTemp) {
-			System.out.println(winterReply);
+			responseToUser = winterReply;
 		} else {
-			System.out.println(noResponse);
+			responseToUser = noResponse;
 		}
 
+		System.out.println(responseToUser);
 		in.close();
 	}
 
