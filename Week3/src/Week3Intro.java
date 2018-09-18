@@ -14,6 +14,24 @@ public class Week3Intro {
 		System.out.println("Hello " + name + "! Day 2 already!");
 		
 		
+		if (n > 10) {
+		       System.out.print("*****");
+		}
+		
+		if (n > 7) { 
+		       System.out.print("****"); 
+		}
+		
+		if (n > 4) { 
+		       System.out.print("***"); 
+		}
+		
+		if (n > 1) { 
+		       System.out.print("**"); 
+		}
+		
+		System.out.println("*");
+		
 		in.close();
 	}	
 }
