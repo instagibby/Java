@@ -11,7 +11,7 @@ public class RockPaperScissorsRevisedDavis {
 				// Prompts for user input (x2)
 				System.out.println("Player One, Choose: rock, paper, scissors, lizard, spock.");
 				String playerOneInput = in.nextLine();
-				System.out.println("Player Two, Choose: rock, paper, scissors, izard, spock.");
+				System.out.println("Player Two, Choose: rock, paper, scissors, lizard, spock.");
 				String playerTwoInput = in.nextLine();
 				
 				// Handles Case
@@ -55,11 +55,12 @@ public class RockPaperScissorsRevisedDavis {
 				String playerTwoWins = "Player two wins!";
 				
 				// Messages sent after winner decided
-				String victoryMessage = "Please enter a valid option:";
-				String winnerMessage = "Rock, Paper, Scissors, Lizard, Spock...";
+				String victoryMessage = rockWinsScissors;
+				String enterValidOption = "Please enter a valid option:";
+				String winnerMessage = playerOneWins;
+				String possibleOptionsResponse = "Rock, paper, scissors, lizard, spock";
 				String tieMessage = "Game ended in a tie.";
 				String tieWinner = "Nobody wins today...";
-				
 				
 				// Runs conditional to test if users input the correct data and shoots a message if not
 				if (testPlayer1 && testPlayer2) {
@@ -70,12 +71,10 @@ public class RockPaperScissorsRevisedDavis {
 							switch (playerTwoInput) {
 							// rock wins player one wins
 								case "scissors":
-									victoryMessage = rockWinsScissors;
-									winnerMessage = playerOneWins;
+									// Default condition
 									break;
 								case "lizard":
 									victoryMessage = rockWinsLizard;
-									winnerMessage = playerOneWins;
 									break;
 							// rock loses player two wins
 								case "paper":
@@ -96,11 +95,9 @@ public class RockPaperScissorsRevisedDavis {
 							// paper wins player one wins
 								case "rock":
 									victoryMessage = paperWinsRock;
-									winnerMessage = playerOneWins;
 									break;
 								case "spock":
 									victoryMessage = paperWinsSpock;
-									winnerMessage = playerOneWins;
 									break;
 							// paper loses player two wins
 								case "scissors":
@@ -121,15 +118,13 @@ public class RockPaperScissorsRevisedDavis {
 							// scissors wins player one wins
 								case "paper":
 									victoryMessage = scissorsWinsPaper;
-									winnerMessage = playerOneWins;
 									break;
 								case "lizard":
 									victoryMessage = scissorsWinsLizard;
-									winnerMessage = playerOneWins;
 									break;
 							// scissors loses player two wins
 								case "rock":
-									victoryMessage = rockWinsScissors;
+									// Default condition
 									winnerMessage = playerTwoWins;
 									break;
 								case "spock":
@@ -146,11 +141,9 @@ public class RockPaperScissorsRevisedDavis {
 							// lizard wins player one wins
 								case "paper":
 									victoryMessage = lizardWinsPaper;
-									winnerMessage = playerOneWins;
 									break;
 								case "spock":
 									victoryMessage = lizardWinsSpock;
-									winnerMessage = playerOneWins;
 									break;
 							// lizard loses player two wins
 								case "scissors":
@@ -171,11 +164,9 @@ public class RockPaperScissorsRevisedDavis {
 							// spock wins player one wins
 								case "scissors":
 									victoryMessage = spockWinsScissors;
-									winnerMessage = playerOneWins;
 									break;
 								case "rock":
 									victoryMessage = spockWinsRock;
-									winnerMessage = playerOneWins;
 									break;
 							// spock loses player two wins
 								case "paper":
@@ -192,7 +183,11 @@ public class RockPaperScissorsRevisedDavis {
 							}
 							break;
 					}
-				} 
+				} else {
+					victoryMessage = enterValidOption;
+					winnerMessage = possibleOptionsResponse;
+					
+				}
 				
 				// Prints message to players
 				System.out.println(victoryMessage);
@@ -200,7 +195,6 @@ public class RockPaperScissorsRevisedDavis {
 				
 				
 				in.close();
-
 	}
 
 }
