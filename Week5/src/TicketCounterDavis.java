@@ -20,6 +20,7 @@ public class TicketCounterDavis {
 		final String greaterThanZero = "You need to buy at least one ticket! ";
 		final String successfulPurchase = "Thanks for your purchase! ";
 		final String ticketsRemaining = " tickets are left.";
+		final String lineBreakLine = "\n------------------------------------------";
 		String printMsgToUser = "";
 		String finalSale = "We are all sold out now, thanks to our " + ticketBuyers + " buyers!";
 		
@@ -49,10 +50,10 @@ public class TicketCounterDavis {
 				}
 				//	If a non integer is entered so we don't get an infinite loop
 			} else {
-				finalSale = "You broke the system, only enter numbers and try again!";
-				break;
+				printMsgToUser = "Only enter numbers and try again!";
+				in.next();
 			}
-			System.out.println(printMsgToUser + "\n");	//	Prints the purchase message and remaining tickets
+			System.out.println(printMsgToUser + lineBreakLine );	//	Prints the purchase message and remaining tickets
 		}
 		
 		//	Finishes the program and closing sentiment
