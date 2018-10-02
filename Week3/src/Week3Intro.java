@@ -9,9 +9,9 @@ public class Week3Intro {
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Enter you name: ");
-		String name = in.nextLine();
+		int n = in.nextInt();
 		
-		System.out.println("Hello " + name + "! Day 2 already!");
+		System.out.println("Hello " + n + "! Day 2 already!");
 		
 		
 		if (n > 10) {
