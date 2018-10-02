@@ -17,6 +17,7 @@ public class OnlineBookOrderModifiedDavis {
 		System.out.println("How many books did you buy today?");
 		int userInputBooks = in.nextInt();
 		
+		// Runs loop for as many books as was input
 		for (int i = 0; i < userInputBooks; i++) {
 			System.out.println("And what was the price of book " + (i+1) + "?");
 			double userInputPrice = in.nextDouble();
