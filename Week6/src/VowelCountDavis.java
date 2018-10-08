@@ -73,5 +73,6 @@ public class VowelCountDavis {
 			msgToUser = nonString;
 		}
 		System.out.println(msgToUser);
+		in.close();
 	}
 }

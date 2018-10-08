@@ -68,7 +68,7 @@ public class VowelFoundDavis {
 			}
 			System.out.println(msgToUser);
 		} while (wishToContinue);
-
+		in.close();
 	}
 
 }
