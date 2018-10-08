@@ -4,6 +4,8 @@
 	<classpathentry kind="src" path="HelloPrinter/src"/>
 	<classpathentry kind="src" path="HelloPrinter/Week2/src"/>
 	<classpathentry kind="src" path="Week3/src"/>
-	<classpathentry kind="src" path="Week5"/>
+	<classpathentry excluding="src/|src/" kind="src" path="Week5"/>
+	<classpathentry kind="src" path="Week6/src"/>
+	<classpathentry kind="src" path="Week5/src"/>
 	<classpathentry kind="output" path="HelloPrinter/Week2/bin"/>
 </classpath>
