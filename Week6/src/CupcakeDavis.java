@@ -19,7 +19,7 @@ public class CupcakeDavis {
 		in.close();
 	}
 	
-	private static double CupcakePricing(String flavor, String icingColor) {
+	public static double CupcakePricing(String flavor, String icingColor) {
 		double price = 0;
 		flavor = flavor.toLowerCase();
 		icingColor = icingColor.toLowerCase();
@@ -36,7 +36,8 @@ public class CupcakeDavis {
 				break;
 		}
 		
-		switch (icingColor) {
+		if (price > 0) {
+			switch (icingColor) {
 			case "white":
 				break;
 			case "blue":
@@ -47,6 +48,8 @@ public class CupcakeDavis {
 				break;
 			default:
 				price += 0.75;
+		}
+		
 		}
 		
 		return price;
