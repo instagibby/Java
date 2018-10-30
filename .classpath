@@ -9,5 +9,6 @@
 	<classpathentry kind="src" path="Week6/src"/>
 	<classpathentry kind="src" path="Week7"/>
 	<classpathentry kind="src" path="Week8"/>
+	<classpathentry kind="src" path="week9"/>
 	<classpathentry kind="output" path="HelloPrinter/Week2/bin"/>
 </classpath>
