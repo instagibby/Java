@@ -24,6 +24,7 @@ public class PasswordValidationDavisTest {
 		assertFalse(PasswordValidationDavis.validatePassword("Rawr1234", ""));
 		assertFalse(PasswordValidationDavis.validatePassword("", "Rawr1234"));
 		
+		
 	}
 
 }
