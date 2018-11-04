@@ -1,5 +1,5 @@
 
-public class EqualArrayCheck {
+public class EqualArrayCheckDavis {
 
 	public static void main(String[] args) {
 		//	Spencer Davis
