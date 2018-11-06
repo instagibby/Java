@@ -10,5 +10,7 @@
 	<classpathentry kind="src" path="Week7"/>
 	<classpathentry kind="src" path="Week8"/>
 	<classpathentry kind="src" path="week9"/>
+	<classpathentry kind="src" path="PizzaDavis"/>
+	<classpathentry kind="src" path="week10/src"/>
 	<classpathentry kind="output" path="HelloPrinter/Week2/bin"/>
 </classpath>
