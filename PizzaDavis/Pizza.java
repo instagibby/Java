@@ -11,18 +11,16 @@ public class Pizza {
 	
 	public Pizza() {
 		super();
-		
 		setTopping("cheese");
-		setSize("large");
 		setPrice(9.99);
 	}
 	
 	
 	public Pizza(String topping, String size, double price) {
 		super();
-		Topping = topping;
-		Size = size;
-		Price = price;
+		setTopping(topping);
+		setSize(size);
+		setPrice(price);
 	}
 	
 	
@@ -30,19 +28,29 @@ public class Pizza {
 		return Topping;
 	}
 	public void setTopping(String topping) {
-		Topping = topping;
+		this.Topping = topping;
 	}
 	public String getSize() {
 		return Size;
 	}
 	public void setSize(String size) {
-		Size = size;
+		String sizeLower = size.toLowerCase();
+		
+		switch (sizeLower){
+			case "small" :
+			case "medium" :
+			case "large" :
+			case "extra large" :
+				this.Size = sizeLower;
+			default:
+				break;
+		}
 	}
 	public double getPrice() {
 		return Price;
 	}
 	public void setPrice(double price) {
-		Price = price;
+		this.Price = price;
 	}
 	
 	
