@@ -1,4 +1,4 @@
-
+package src;
 public class ElectricBlanket extends Blanket {
 	private int heatSettingsNo;
 	private boolean shutOff;

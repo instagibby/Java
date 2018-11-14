@@ -12,11 +12,6 @@ public class Address {
 	private String Zip;
 	
 
-	public Address() {
-		super();
-		// TODO Auto-generated constructor stub
-		setAptNo(" ");
-	}
 
 
 	// Includes AptNo
@@ -28,6 +23,11 @@ public class Address {
 		City = city;
 		State = state;
 		Zip = zip;
+		
+		// We also were supposed to have it fail if the stat isn't 2 and zip != 5
+		if (state.length() > 2 || zip.length() != 5 || state == null || zip == null) {
+			throw new IllegalArgumentException("Object Not Created");
+		}
 	}
 	
 	
@@ -39,8 +39,12 @@ public class Address {
 		City = city;
 		State = state;
 		Zip = zip;
-		
 		setAptNo("");
+		
+		if (state.length() > 2 || zip.length() != 5 || state == null || zip == null) {
+			throw new IllegalArgumentException("Object Not Created");
+		}
+		
 		
 	}
 	
