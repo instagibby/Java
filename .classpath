@@ -14,6 +14,9 @@
 	<classpathentry kind="src" path="week10/src"/>
 	<classpathentry kind="src" path="Week11/src/LeagueDavis"/>
 	<classpathentry excluding="src/LeagueDavis/" kind="src" path="Week11"/>
+	<classpathentry kind="src" path="Week12/PlayerProject"/>
+	<classpathentry kind="src" path="ClassroomProject"/>
+	<classpathentry excluding="PlayerProject/" kind="src" path="Week12"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="HelloPrinter/Week2/bin"/>
 </classpath>

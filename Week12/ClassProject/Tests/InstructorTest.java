@@ -1,8 +1,10 @@
-package src;
+package Tests;
 
 import static org.junit.Assert.*;
 
 import org.junit.Test;
+
+import Model.Instructor;
 
 public class InstructorTest {
 

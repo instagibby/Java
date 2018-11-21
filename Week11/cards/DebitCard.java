@@ -1,3 +1,5 @@
+package cards;
+
 
 public class DebitCard extends Card {
 	// Spencer Davis
@@ -58,6 +60,5 @@ public class DebitCard extends Card {
 			return false;
 		return true;
 	}
-	
-	
+
 }

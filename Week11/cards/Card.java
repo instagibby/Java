@@ -1,14 +1,16 @@
+package cards;
+
 
 public class Card {
 	// Spencer Davis
 
 	private String name;
 
-	public Card() {
+	protected Card() {
 		name = "";
 	}
 
-	public Card(String n) {
+	protected Card(String n) {
 		name = n;
 	}
 
@@ -23,7 +25,7 @@ public class Card {
 	public String format() {
 		return "Card holder: " + name;
 	}
-	
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;

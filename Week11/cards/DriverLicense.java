@@ -1,3 +1,5 @@
+package cards;
+
 import java.time.LocalDate;
 
 public class DriverLicense extends Card {
@@ -27,16 +29,16 @@ public class DriverLicense extends Card {
 	public void setExpirationDate(LocalDate expirationDate) {
 		this.expirationDate = expirationDate;
 	}
-	
+
 	public boolean isExpired() {
 		LocalDate current = LocalDate.now();
 		LocalDate expires = this.getExpirationDate();
-		if(expires.isBefore(current)) {
+		if (expires.isBefore(current)) {
 			return true;
 		} else {
 			return false;
 		}
-		
+
 	}
 
 	public String format() {
@@ -73,6 +75,5 @@ public class DriverLicense extends Card {
 			return false;
 		return true;
 	}
-	
-	
+
 }

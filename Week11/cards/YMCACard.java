@@ -1,3 +1,5 @@
+package cards;
+
 
 public class YMCACard extends Card {
 	// Spencer Davis
@@ -45,6 +47,5 @@ public class YMCACard extends Card {
 			return false;
 		return true;
 	}
-	
-	
+
 }

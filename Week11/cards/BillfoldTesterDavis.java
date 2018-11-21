@@ -1,4 +1,9 @@
+package cards;
+
+import billfold.Billfold;
+
 import java.time.LocalDate;
+
 
 public class BillfoldTesterDavis {
 
@@ -25,6 +30,7 @@ public class BillfoldTesterDavis {
 		System.out.println(spencerWallet.formatCards());
 		System.out.println(claireWallet.getExpiredCardCount());
 		System.out.println(test1.equals(test2));
+
 	}
 
 }
