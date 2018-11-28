@@ -1,4 +1,3 @@
-
 public class Leaf implements Turner{
 	//Spencer Davis
 	private String color;
@@ -20,7 +19,7 @@ public class Leaf implements Turner{
 	@Override
 	public String flip() {
 		// TODO Auto-generated method stub
-		return "Breezy day";
+		return "Changing colors";
 	}
 	@Override
 	public String turn() {

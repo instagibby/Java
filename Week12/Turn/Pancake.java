@@ -1,5 +1,5 @@
 
-public class Pankcake implements Turner{
+public class Pancake implements Turner{
 
 	@Override
 	public String flip() {

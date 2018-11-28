@@ -2,7 +2,7 @@ package Tests;
 
 import java.time.LocalTime;
 
-import Model.Classroom;
+import ClassProject.Model.Classroom;
 import Model.Course;
 import Model.Instructor;
 

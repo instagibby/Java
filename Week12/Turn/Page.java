@@ -1,4 +1,3 @@
-
 public class Page implements Turner{
 
 	@Override
@@ -10,7 +9,7 @@ public class Page implements Turner{
 	@Override
 	public String turn() {
 		// TODO Auto-generated method stub
-		return "Next page is currentPage++";
+		return "Going to the next page";
 	}
 
 	@Override

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="src" path="HelloPrinter/src"/>
 	<classpathentry kind="src" path="HelloPrinter/Week2/src"/>
 	<classpathentry kind="src" path="Week3/src"/>
@@ -16,7 +16,6 @@
 	<classpathentry excluding="src/LeagueDavis/" kind="src" path="Week11"/>
 	<classpathentry kind="src" path="Week12/PlayerProject"/>
 	<classpathentry kind="src" path="ClassroomProject"/>
-	<classpathentry excluding="PlayerProject/" kind="src" path="Week12"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="HelloPrinter/Week2/bin"/>
 </classpath>

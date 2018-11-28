@@ -1,4 +1,4 @@
-package Model;
+package ClassProject.Model;
 
 public class Classroom {
 	// Spencer Davis
